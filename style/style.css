@@ -526,8 +526,10 @@ box-sizing: border-box;
 	margin: 4rem 4rem;
 	display: flex;
 	text-align: center;
+	justify-content: center;
  }
  .vechungtoi-text2 span{
+	width: 80%;
 	font-size: 20px;
  }
 .vechungtoi-content-2{
@@ -657,4 +659,23 @@ border-radius: 5rem;
 	.overlay.active{
 		display: block;
 	}
+	.vechungtoi-content-2{
+		display: block;
+		justify-content: center;
+	}
+	.vechungtoi-content-2-text{
+		width: 100%;
+	}
+	.vechungtoi-content-2-img{
+		display: flex;
+		justify-content: center;
+	}
+	.vechungtoi-content-2-img img{
+		width: 80%;
+		border-radius: 5rem;
+		}
+		.vechungtoi-text2 span{
+			width: 100%;
+			font-size: 20px;
+		 }
 }
