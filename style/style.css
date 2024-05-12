@@ -168,7 +168,7 @@ body {
 	font-family: "Baloo 2", sans-serif;
 	border-radius: 10px;
 	border: 3px solid #32353a;
-	color: #32353a;
+	background-color: white;
 	padding: 8px 50px;
 	text-align: center;
 	display: inline-block;
