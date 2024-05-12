@@ -161,7 +161,33 @@ body {
 	height: auto;
 	border-radius: 2pc;
 }
-.main-content-1-button {
+.main-content-1-button{
+	margin-top: 2rem;
+}
+.main-content-1-button a{
+	text-decoration: none;
+	font-size: 23px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #32353a;
+}
+.main-content-button{
+	border-radius: 10px;
+	border: 3px solid #32353a;
+	background-color: white;
+	padding: 8px 50px;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+.main-content-button:hover{
+	background-color: #32353a;
+	color:#fff;
+}
+
+/* .main-content-1-button {
 	padding-top: 1.5rem;
 }
 .main-content-1-button button {
@@ -185,7 +211,7 @@ body {
 }
 .main-content-1-button button:hover a {
 	color: white; /* Đổi màu chữ thành trắng khi trỏ chuột vào */
-}
+ */
 
 .main-content-2 {
 	box-sizing: border-box;
@@ -608,7 +634,7 @@ border-radius: 5rem;
 			font-size: 23px;
 			font-weight: bold;
 		}
-		.vechungtoi-content-button button{
+		.button-link{
     border-radius: 10px;
     border: 3px solid #BA916A;
 		background-color: white;
@@ -619,10 +645,8 @@ border-radius: 5rem;
     margin: 4px 2px;
     cursor: pointer;
 		}
-		.vechungtoi-content-button button:hover{
+		.button-link:hover{
 			background-color: #BA916A;
-		}
-		.vechungtoi-content-button button:hover a{
 			color: white;
 		}
 		.vechungtoi-content-4{
