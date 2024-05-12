@@ -1,0 +1,660 @@
+html {
+  scroll-behavior: smooth;
+  overflow-anchor: none;
+}
+body {
+
+	margin: 0 auto;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Baloo 2", sans-serif;
+}
+.container {
+	margin-left: 0%;
+}
+.Header {
+	background-color: #32353a;
+	width: 100%;
+	height: 17.875rem;
+	margin-bottom: 2rem;
+}
+.Headder-content {
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 17.875rem;
+	width: 100%;
+}
+.Header-logo img {
+	width: 15rem;
+	height: 15rem;
+}
+.Header-logo {
+  padding-right: 3rem;
+}
+.Header-menu {
+	display: flex;
+	align-items: center;
+
+}
+/* .Header-menu-button{
+	margin: 8rem 0;
+	border: 0.5px solid white;
+	border-radius: 5px;
+	padding: 0.12rem 0.9rem;
+	background-color: #32353a;
+	position: fixed;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 9999;
+	display: none;
+} */
+.menu {
+	list-style: none;
+	height: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+.menu li {
+	width: 10rem;
+	font-size: 24px;
+	line-height: 50px;
+	text-align: center;
+	border: 2px;
+}
+.menu li a {
+	color: white;
+	text-decoration: none;
+}
+.menu li:hover {
+	background-color: #9a9da6;
+	border-radius: 5px;
+}
+.main{
+  position: relative;
+	max-width: 45rem;
+	margin: 0 auto;
+	padding: 0 3rem;
+}
+.main-img {
+	margin: 0 auto;
+	display: flex;
+	max-width: 1500px;
+	max-height: 600px;
+  position: relative;
+	aspect-ratio: 27 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+  -ms-overflow-style: none; 
+	scrollbar-width: none;
+}
+.main-img::-webkit-scrollbar {
+	display: none;
+}
+.main-img img {
+	border-radius: 10px;
+	max-width: 100%;
+  flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+  animation: slideIn 1s ease;
+}
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+.slider-nav a {
+	width: 0.75rem;
+	height: 0.75rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+  animation: slideIn 2s ease; /* Thêm hiệu ứng chuyển động cho độ mờ */
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+.slide:first-child {
+  display: block;
+}
+
+.main-content-1 {
+	
+	padding-top: 5rem;
+	margin: 0 auto;
+	max-width: 80rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.main-content-1-text {
+	font-family: "Baloo 2", sans-serif;
+	font-size: 20px;
+	width: fit-content;
+	padding: 40px 20px 0;
+	text-align: left;
+	margin-right: 10px;
+}
+.main-content-1-img {
+	display: flex;
+	justify-content: center;
+}
+.main-content-1-img img {
+	width: 30rem;
+	height: auto;
+	border-radius: 2pc;
+}
+.main-content-1-button {
+	padding-top: 1.5rem;
+}
+.main-content-1-button button {
+	font-family: "Baloo 2", sans-serif;
+	border-radius: 10px;
+	border: 3px solid #32353a;
+	color: #32353a;
+	padding: 8px 50px;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+.main-content-1-button button a {
+	text-decoration: none;
+	color: #32353a;
+}
+.main-content-1-button button:hover {
+	background-color: #32353a;
+}
+.main-content-1-button button:hover a {
+	color: white; /* Đổi màu chữ thành trắng khi trỏ chuột vào */
+}
+
+.main-content-2 {
+	box-sizing: border-box;
+	width: 100%;
+	max-height: 1200px;
+	margin: 0 auto;
+}
+.main-content-2-text-poster-reponsive{
+	display: none;
+	box-sizing: border-box;
+	width: 100%;
+	max-height: fit-content;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+.main-content-2-text-poster-reponsive img{
+	max-width: 100%; 
+	height: fit-content;
+}
+.main-content-2-text-poster table {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+}
+.name-rows-table {
+	font-family: "Baloo 2", sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: #32353a;
+}
+.main-content-2-text-poster-table td img {
+	border-radius: 15px;
+	max-width: 100%; /* Đặt chiều rộng tối đa của ảnh là 100% của ô chứa */
+	max-height: 40rem;
+	object-fit: cover;
+}
+.main-content-2-text-poster-table th,
+.main-content-2-text-poster-table td {
+	padding-left: 20px;
+	padding-right: 20px; /* Tạo khoảng cách 10px giữa các cột */
+}
+.footer {
+	margin: 0 auto;
+	background-color: #32353a;
+	width: 100%;
+	height: fit-content;
+}
+.footer-line {
+	display: flex;
+	margin-top: 5rem;
+	background-color: #6d6d6d;
+	width: 100%;
+	height: 2rem;
+}
+.footer-content {
+	display: flex;
+	justify-content: center;
+	font-family: "Baloo 2", sans-serif;
+	font-size: 18px;
+	color: white;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.footer-content-1 {
+	width: 25rem;
+	margin-right: 10rem;
+	margin-top: 3rem;
+}
+
+.footer-content-logo img {
+	height: 11rem;
+	width: 15rem;
+}
+.footer-content-logo {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3rem;
+}
+.footer-content-2 {
+	height: fit-content;
+	width: fit-content;
+	margin-top: 3rem;
+	margin-right: 10rem;
+}
+.footer-content-2 ul {
+	list-style: none;
+	margin-bottom: 5rem;
+}
+.footer-content-3 img{
+  height: auto;
+}
+.footer-credit {
+	padding: 1rem;
+	font-style: italic;
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+.dropppp{
+	display: none;
+	position: fixed; 
+	z-index: 9999;
+	max-width: 100%;
+	height: 100%;
+	font-family: "Baloo 2", sans-serif;
+	transition: left 1s ease;
+	left: -15rem;
+}
+
+
+.background-drop-menu{
+	width: 15rem;
+	border-radius: 5px;
+	background-color: #9a9da6;
+}
+.Header-menu-button  {
+	  margin-top: 8rem;
+		border: 0.5px solid white;
+    border-radius: 5px;
+		height: 3.5rem;
+    padding: 0.3rem 0.75rem;
+    background-color: #32353a;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+} 
+.background-drop-menu li {
+	width: 100%;
+}
+.background-drop-menu li a{
+
+	display: block;
+	width: 100%;
+	color: white;	
+	font-size: 23px;
+	text-decoration: none;
+}
+.background-drop-menu li a:hover{
+	color: rgb(240, 200, 71);
+}
+.background-drop-menu ul{
+	padding: 1rem;
+	list-style: none;
+}
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Màu đen với opacity 0.5 */
+	z-index: 9998; /* Đặt z-index thấp hơn so với menu */
+}
+#menu-img{
+	display: block;
+	padding: 0 2px;
+}
+#menu-img img{
+	width: 100%;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+ 
+	background: url(../images/1352183.png)no-repeat; 
+	background-position: center;
+	background-size: cover;
+}
+.form-box{
+	position: relative;
+	background: transparent;
+  border: 2px solid white;
+  border-radius: 2rem;
+	backdrop-filter: blur(15px);
+	width: 37rem;
+	height: 40rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h2{
+	color:  white;
+	font-size: 2.5rem;
+	text-align: center;
+}
+.input-box{
+	margin: 2rem 0;
+	position: relative;
+	width: 20rem;
+	border-bottom: 2px solid white;
+}
+.input-box label{
+	position: absolute;
+	top: 55%;
+	left: 5px;
+	transform:  translateY(-50%);
+	color: white;
+	font-size: 1.1em;
+	pointer-events: none;
+  transition: .5s;
+}
+.input-box input{
+  width: 100%;
+  height: 40px;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: white;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.input-box i {
+  position: absolute;
+  right: 1rem;
+  top:  1rem;
+  color: white;
+}
+.forget{
+  margin: -15px 0 15px ;
+    font-size: 1em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+.forget label input{
+  margin-right: 3px; 
+}
+.forget label a{
+  color: #fff;
+  text-decoration: none;
+}
+.forget a{
+  color: #fff;
+  text-decoration: none;
+}
+.forget label a:hover{
+  text-decoration: underline;
+}
+.forget a:hover{
+  text-decoration: underline;
+}
+
+ #buton-login{
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+.register{
+ color: #fff;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.register p a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.register p a:hover{
+  text-decoration: underline;
+
+}
+.logo-contact {
+  position: fixed;
+ 	bottom: 4rem;
+  right: 2rem;
+  margin-top: 10px; /* Adjust as needed */
+  margin-right: 10px; /* Adjust as needed */
+  z-index: 9999; /* Adjust as needed */
+}
+.logo-contact img{
+	width: 50px;
+	height: 50px;
+}
+
+
+/* Về chúng tôi */
+/* .main-content-vechungtoi{
+ display: flex;
+ justify-content: center;
+} */
+.vechungtoi-anh1{
+	display: flex;
+justify-content: center;
+box-sizing: border-box;
+}
+#vechungtoi-anh1{
+ width: 25%;
+ height: auto;
+}
+.vechungtoi-anh2{
+	display: flex;
+justify-content: center;
+box-sizing: border-box;
+}
+.space{
+	display: block;
+	width: 100%;
+	height: 4rem;
+}
+#vechungtoi-anh2{
+	width: 85%;
+	height: auto;
+	transition: width 0.5s ease;
+ }
+ #vechungtoi-anh2:hover{
+	width: 95%;
+	transition: width 0.5s ease;
+ }
+ .vechungtoi-text1{
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+ }
+ .vechungtoi-text1 h1 {
+	text-align: center;
+	color: #986F51;
+	font-size: 60px;
+ }
+ .vechungtoi-text2{
+	margin: 4rem 4rem;
+	display: flex;
+	text-align: center;
+ }
+ .vechungtoi-text2 span{
+	font-size: 20px;
+ }
+.vechungtoi-content-2{
+	display: flex;
+	justify-content: center;
+}
+.vechungtoi-content-2-text{
+width: 35rem;
+font-size: 20px;
+}
+.vechungtoi-content-2-text > *{
+	margin: 2rem;
+	text-align: left;
+}
+.vechungtoi-content-2-text h1{
+color: #986F51;
+font-size: 80px;
+}
+.vechungtoi-content-2-text strong{
+	color: #986F51;
+}
+.vechungtoi-content-2-img img{
+width: 35rem;
+border-radius: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* animation */
+@keyframes slideIn {
+  0% {
+    opacity: 0.5;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* REPONSIVE   */
+@media (width <1122px) {
+	.dropppp{
+		display: flex;
+	}
+
+	.menu {
+		display: none;
+	}
+	.main-content-1 {
+		display: inline;
+	}
+	.main-content-1-text{
+		padding-left: 5rem;
+	}
+	.main-content-1-img {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.Header-logo{
+		padding: 0;
+	}
+	.main-content-1-img img {
+	
+		max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước của phần tử chứa */
+		height: auto;
+		border-radius: 2pc;
+	}
+  .footer-content{
+   display: block;
+  }
+  .footer-content-1{
+    width: 100%;
+  }
+  .footer-content-2{
+    width: 100%;
+  }
+  .footer-content-3{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+	.main-content-2-text-poster-reponsive {
+		padding-top: 5rem;
+		padding-right: 2rem;
+		padding-left: 2rem;
+		box-sizing: border-box;
+		height: fit-content;
+		width: 100%;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+	}
+	.main-content-2-text-poster-reponsive p {
+		font-family: "Baloo 2", sans-serif;
+		font-size: 45px;
+		font-weight: bold;
+		color: #32353a;
+		padding: 2rem 0
+	}
+	.main-content-2-text-poster-reponsive img{
+		height: auto;
+		width: 100%;	
+		border-radius: 10px ;
+
+	}
+	.main-content-2-text-poster table{
+		display: none;
+	}
+	.Header-menu-button{
+		display: block;
+	}
+	.dropppp.active{
+		left: 0;
+	}
+	.overlay.active{
+		display: block;
+	}
+}
