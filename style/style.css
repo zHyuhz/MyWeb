@@ -401,7 +401,9 @@ section{
 	align-items: center;
 }
 h2{
-	color:  black	;
+	display: flex;
+  justify-content: center;
+	color:  rgb(253, 253, 253)	;
 	font-size: 2rem;
 	padding: 2rem 0;
 }
@@ -658,9 +660,87 @@ border-radius: 5rem;
 			width: 65%;
 			text-align: center;
 		}
-
-
-
+.tintuc-main{
+	display: flex;
+	justify-content: center;
+}
+.tintuc-main-content-1{
+	width: 1200px;
+}
+.tintuc-main h1{
+	margin-left: 1rem;
+	font-size: 30px;
+	font-weight: 200;
+	/* border-bottom: 1px solid black; */
+}
+.tintuc-main-content-1-article{
+	display: flex;
+	width: auto;
+	flex-flow: row wrap;
+	border-top: 1px solid black;
+	/* border: 2px solid #000; */
+	justify-content: center;
+}
+.news-item{
+	position: relative;
+	margin: 3rem;
+	width: 300px;
+	height: 320px;
+}
+.news-item img{
+	width: 300px;
+	height: 180px;
+}
+.news-item h2{
+	font-size: 20px;
+	padding: 1rem 0 ;
+}
+.news-item h2 a{
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+}
+.news-item .news-item-date{
+	opacity: 50%;
+	border-bottom: 1px solid black;
+}
+.news-item .read-more{
+	position: absolute;
+	right: 0;
+}
+.news-item .read-more a {
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+}
+.news-item .read-more a:hover{
+	color: #986F51;
+}
+.news-item h2 a:hover{
+	color: #986F51;
+}
+.tintuc-main-content-2{
+	margin: 0 1rem 1rem;
+	padding: 0 2rem 2rem;
+	width: 25%;
+  height: 25rem; 
+  min-height: 200px;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
+}
+.tintuc-main-content-2 h1{
+	font-size: 30px;
+}
+.tintuc-main-content-2 .news-post ul a{
+text-decoration: none;
+font-size: 17px;
+color: black;
+}
+.tintuc-main-content-2 .news-post ul a:hover{
+	color: #986F51;
+}
 /* animation */
 @keyframes slideIn {
   0% {
@@ -792,5 +872,32 @@ border-radius: 5rem;
 				font-size: 20px;
 				width: 95%;
 				text-align: center;
+			}
+			.tintuc-main{
+				display: block;
+			}
+			.tintuc-main-content-1-article{
+				display: flex;
+				justify-content: center;
+			}
+			.tintuc-main-content-1 {
+				width: auto;
+			}
+			.tintuc-main-content-2{
+				padding: 3rem;
+				margin-left: 0rem;
+				width: 100%;
+				height: auto;
+			}
+			
+			.news-item , a{
+				width: 100%;
+				padding: 1rem;
+				margin-left: 0;
+				margin-right: 0;
+			}
+			.news-item .qwe{
+				display: flex;
+				justify-content: center;
 			}
 		}
