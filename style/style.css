@@ -177,7 +177,7 @@ body {
 	background-color: white;
 	padding: 8px 50px;
 	text-align: center;
-	display: inline-block;
+
 	font-size: 20px;
 	margin: 4px 2px;
 	cursor: pointer;
@@ -402,8 +402,7 @@ section{
 }
 h2{
 	display: flex;
-  justify-content: center;
-	color:  rgb(253, 253, 253)	;
+	color: black	;
 	font-size: 2rem;
 	padding: 2rem 0;
 }
@@ -890,7 +889,7 @@ color: black;
 				height: auto;
 			}
 			
-			.news-item , a{
+			.news-item, .xem-them {
 				width: 100%;
 				padding: 1rem;
 				margin-left: 0;
