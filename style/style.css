@@ -406,6 +406,14 @@ h2{
 	font-size: 2rem;
 	padding: 2rem 0;
 }
+.header-login{
+	display: flex;
+	justify-content: center;
+	
+}
+.header-login h2{
+	color: white;
+}
 .input-box{
 	margin: 2rem 0;
 	position: relative;
@@ -421,6 +429,10 @@ h2{
 	font-size: 1.1em;
 	pointer-events: none;
   transition: .5s;
+}
+.htcppvm{
+display: flex;
+justify-content: center;
 }
 .input-box input{
   width: 100%;
