@@ -1,3 +1,23 @@
+var slideIndex = 1;
+
+function plusDivs(n) {
+    var images = document.querySelectorAll(".main-img img");
+    slideIndex += n;
+
+    if (slideIndex < 1) {
+        slideIndex = images.length;
+    } else if (slideIndex > images.length) {
+        slideIndex = 1;
+    }
+
+    changeSlide(slideIndex);
+}
+
+function currentDiv(n) {
+  
+    changeSlide(slideIndex = n);
+}
+
 function changeSlide(slideNumber) {
 	// Ẩn tất cả các hình ảnh
 	var images = document.querySelectorAll(".main-img img");
@@ -8,6 +28,28 @@ function changeSlide(slideNumber) {
 	// Hiển thị hình ảnh tương ứng với thẻ a được nhấn
 	var selectedImage = document.getElementById("slide-" + slideNumber);
 	selectedImage.style.display = "block";
+}
+
+
+// auto chay anh
+var myIndex = 0;
+auto();
+
+function auto() {
+    var i;
+    var images = document.querySelectorAll(".main-img img");
+    for (i = 0; i < images.length; i++) {
+        images[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > images.length) {
+        myIndex = 1;
+    }
+    var selectedImage = document.getElementById("slide-" + myIndex);
+    if (selectedImage) {
+        selectedImage.style.display = "block";
+    }
+    setTimeout(auto, 4000); // Chuyển slide mỗi 2,5 giây
 }
 
 const toggleBtn = document.querySelector(".Header-menu-button ");

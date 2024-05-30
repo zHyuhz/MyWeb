@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 	<link rel="stylesheet" href="style/style.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet" />
@@ -69,10 +69,16 @@
 				<img id="slide-2" src="images/KAT_BANNER-WEB_OBL.jpg">
 				<img id="slide-3" src="images/KAT_BANNER-WEB_CCDD.jpg" alt="">
 				<img id="slide-4" src="images/KAT_BANNER-WEB_BGDN.jpg" alt="">
+
+				<div class="left-right-button">
+					<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+					<div class="w3-right w3-hover-text-khaki"onclick="plusDivs(1)">&#10095;</div>
+				</div>
 				<div class="slider-nav">
-					<a href="#slide-1" onclick="changeSlide(1)"></a>
-					<a href="#slide-2" onclick="changeSlide(2)"></a>
-					<a href="#slide-3" onclick="changeSlide(3)"></a>
+					<span onclick="changeSlide(1)"></span> 
+					<span  onclick="changeSlide(2)"></span> 
+					<span  onclick="changeSlide(3)"></span> 
+					<span onclick="changeSlide(4)"></span> 
 				</div>
 			</div>
 

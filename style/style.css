@@ -84,6 +84,7 @@ body {
 	padding: 0 3rem;
 }
 .main-img {
+	width: 100%;
 	margin: 0 auto;
 	display: flex;
 	max-width: 1500px;
@@ -109,6 +110,28 @@ body {
 	object-fit: cover;
   animation: slideIn 1s ease;
 }
+
+
+ /* Slider img button left- :right */
+.left-right-button{
+	width: 100%;
+	font-size: 2.5rem;
+	cursor:pointer;
+	display: block;
+	column-gap: 1rem;
+	position: absolute;
+	top: 50%;
+	color: white;
+	animation: slideIn 2s ease;
+}
+.w3-left{
+	float: left ;
+	padding-left: 0.75rem;
+}
+.w3-right{
+	float: right ;
+	padding-right: 0.75rem;
+}
 .slider-nav {
 	display: flex;
 	column-gap: 1rem;
@@ -118,16 +141,17 @@ body {
 	transform: translateX(-50%);
 	z-index: 1;
 }
-.slider-nav a {
+.slider-nav span {
 	width: 0.75rem;
 	height: 0.75rem;
 	border-radius: 50%;
 	background-color: #fff;
 	opacity: 0.75;
+	cursor:pointer;
   animation: slideIn 2s ease; /* Thêm hiệu ứng chuyển động cho độ mờ */
 }
 
-.slider-nav a:hover {
+.slider-nav span:hover {
 	opacity: 1;
 }
 .slide:first-child {
