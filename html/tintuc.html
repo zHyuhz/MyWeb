@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="../js/main.js"></script>
 	</head>
 	<body>
@@ -28,6 +29,7 @@
               <li style="background-color: #72757c; border-radius: 5px;" ><a href="#">Tin tức</a></li>
               <li><a href="./vechungtoi.html">Về chúng tôi</a></li>
               <li><a href="./login.html">Đăng nhập</a></li>
+              <li><a class="openpopup1" style="cursor: pointer;">Liên hệ</a></li>
             </ul>
           </div>  
           <div id="open-button" class="Header-menu-button">
@@ -40,27 +42,23 @@
         </div>
       </div>
       <div class="Header">
-  
         <div class="Headder-content">
           <div>
             <a class="Header-logo" href="">
               <img src="../images/43336576_326459451235574_160113301303328768_n.jpg" />
             </a>
           </div>
-  
           <div class="Header-menu">
-  
             <ul class="menu">
               <li ><a href="../index.html">Trang chủ</a></li>
               <li><a href="./menu.html">Menu</a></li>
               <li style="background-color: #9a9da6; border-radius: 5px;"><a href="#">Tin tức</a></li>
               <li><a href="./vechungtoi.html">Về chúng tôi</a></li>
               <li><a href="./login.html">Đăng nhập</a></li>
+              <li><a class="openpopup" style="cursor: pointer;">Liên hệ</a></li>
             </ul>
           </div>
-  
         </div>
-  
       </div>
       <div class="tintuc-main">
         <div class="tintuc-main-content-1">
@@ -136,6 +134,48 @@
             <a href=""><li><span>OOLONG BA LÁ CHÍNH THỨC CHÀO XUÂN 2024</span> <p style="opacity: 60%;">21/03/2024</p></li></a>
             <a href=""><li><span>OOLONG BA LÁ CHÍNH THỨC CHÀO XUÂN 2024</span> <p style="opacity: 60%;">21/03/2024</p></li></a>
           </ul>
+          </div>
+        </div>
+        <div class="popup" id="popup">
+          <div class="items">
+            <div class="contact">
+              <div class="in-contact">
+                <img src="../images/lien-he.png  " alt="" id="img" class="img-lien-he">
+                <div class="social">
+                  <div class="social-text">
+                    <span class="social-text-1">Liên hệ với chúng tôi:</span>
+                  </div>
+                  <div class="icon-button-social">
+                    <ul>
+                      <li><a class="icon-button-social-button" href=""><i class='bx bxl-facebook-circle'></i></a></li>
+                      <li><a class="icon-button-social-button" href=""><i class='bx bxl-github'></i></a></li>
+                      <li><a class="icon-button-social-button" href=""><i class='bx bxl-youtube'></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="submit-form">
+              <span class="close-btn" id="closePopup">&times;</span>
+              <h1 class="header-submit-form">Liên hệ chúng tôi</h1>
+  
+              <form action="" class="form">
+                <div class="input-box-submit">
+                  <input type="text" class="input" placeholder="Tên" required>
+  
+                </div>
+                <div class="input-box-submit">
+                  <input type="text" class="input" placeholder="Email" required>
+  
+                </div>
+                <div class="input-box-submit">
+                  <textarea class="input" required id=" message" placeholder="Tin nhắn cho chúng tôi" cols="30"
+                    rows="10"></textarea>
+  
+                </div>
+                <input class="submit" type="submit" value="Gửi">
+              </form>
+            </div>
           </div>
         </div>
       </div>
